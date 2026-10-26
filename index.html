@@ -235,6 +235,13 @@ a.vid-card:active{transform:scale(.99)}
   border:1.5px dashed rgba(138,106,36,.45);border-radius:16px;padding:15px 14px;margin:4px 0 12px;
   color:var(--gold-deep);font-weight:600;font-size:15px;background:rgba(201,162,75,.08);text-align:center;
 }
+
+/* press items */
+.press-item{display:block;background:#fffdf7;border-radius:16px;padding:13px 15px;margin-bottom:11px;
+  box-shadow:0 1px 0 rgba(138,106,36,.22), 0 8px 20px rgba(42,29,17,.05);transition:transform .15s var(--ease)}
+a.press-item:active{transform:scale(.985)}
+.press-item .p-title{font-size:15.5px;font-weight:600;line-height:1.4;color:var(--ink)}
+.press-item .p-meta{display:flex;justify-content:space-between;margin-top:7px;font-size:12px;color:var(--ink-soft)}
 @media (prefers-reduced-motion: reduce){
   *{animation:none!important;transition-duration:.01s!important}
 }
@@ -309,6 +316,14 @@ a.vid-card:active{transform:scale(.99)}
         <span class="tile social"><svg viewBox="0 0 24 24" fill="none"><path d="M14.5 4v10.8a3.9 3.9 0 11-3.3-3.85" stroke="#e3c878" stroke-width="1.8" stroke-linecap="round"/><path d="M14.5 4c.4 2.6 2 4.3 4.6 4.7" stroke="#e3c878" stroke-width="1.8" stroke-linecap="round"/></svg></span>
         <span class="lbl">TikTok</span>
       </a>
+      <a class="app" href="https://open.spotify.com/artist/3Ip1c8ekjMvUlK6u4VAyue" target="_blank" rel="noopener">
+        <span class="tile social"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.6" stroke="#e3c878" stroke-width="1.8"/><path d="M8 10.1c2.7-.8 5.5-.6 8 .7M8.3 13c2.3-.6 4.6-.4 6.7.7M8.6 15.6c1.9-.5 3.8-.3 5.5.6" stroke="#e3c878" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        <span class="lbl">Spotify</span>
+      </a>
+      <a class="app" href="https://music.apple.com/us/artist/aaniyah/1771416878" target="_blank" rel="noopener">
+        <span class="tile social"><svg viewBox="0 0 24 24" fill="none"><path d="M9.5 17.3V7.2l10-2v10.6" stroke="#e3c878" stroke-width="1.8" stroke-linejoin="round"/><circle cx="6.8" cy="17.3" r="2.7" fill="#e3c878"/><circle cx="16.8" cy="15.8" r="2.7" fill="#e3c878"/></svg></span>
+        <span class="lbl">Apple Music</span>
+      </a>
       <button class="app" data-open="music">
         <span class="tile"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="#8a6a24" stroke-width="1.8"/><circle cx="12" cy="12" r="2.4" fill="#8a6a24"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3" stroke="#8a6a24" stroke-width="1.8" stroke-linecap="round"/></svg></span>
         <span class="lbl">The Becoming</span>
@@ -316,6 +331,10 @@ a.vid-card:active{transform:scale(.99)}
       <button class="app" data-open="sofar">
         <span class="tile"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12.5" r="1.9" fill="#8a6a24"/><path d="M8.4 9.3a5.2 5.2 0 000 6.4M15.6 9.3a5.2 5.2 0 010 6.4M5.9 6.8a9.2 9.2 0 000 11.4M18.1 6.8a9.2 9.2 0 010 11.4" stroke="#8a6a24" stroke-width="1.8" stroke-linecap="round"/></svg></span>
         <span class="lbl">Sofar Sounds</span>
+      </button>
+      <button class="app" data-open="press">
+        <span class="tile"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4.5" width="16" height="15" rx="2.5" stroke="#8a6a24" stroke-width="1.8"/><path d="M7.5 8h9" stroke="#8a6a24" stroke-width="2.3" stroke-linecap="round"/><path d="M7.5 12h9M7.5 15.5h6" stroke="#8a6a24" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+        <span class="lbl">Press</span>
       </button>
     </nav>
 
@@ -510,6 +529,43 @@ a.vid-card:active{transform:scale(.99)}
       </div>
       <h3>Testimonials</h3>
       <div id="noteFeed"></div>
+    </div>
+  </section>
+
+  <!-- ================= PRESS ================= -->
+  <section class="sheet" id="sheet-press" aria-label="Press">
+    <div class="sheet-bar"><div class="sheet-title">Press</div><button class="done-btn" data-close>Done</button></div>
+    <div class="sheet-body">
+      <p class="lede">Written about her — the Repeatable Press record.</p>
+      <a class="press-item" href="https://repeatable.press/2026/10/22/aaniyah-andersons-have-it-your-way-official-video-premieres-worldwide-on-vevo-friday-october-23/" target="_blank" rel="noopener">
+        <span class="p-title" style="display:block">Aaniyah Anderson&rsquo;s &ldquo;Have It Your Way&rdquo; Official Video Premieres Worldwide on Vevo — Friday, October 23</span>
+        <span class="p-meta"><span>October 22, 2026</span><span>Repeatable Press</span></span>
+      </a>
+      <a class="press-item" href="https://repeatable.press/2026/10/21/aaniyah-anderson-records-dont-explain-at-marigny-studios-for-voice-of-tomorrow-in-session/" target="_blank" rel="noopener">
+        <span class="p-title" style="display:block">Aaniyah Anderson Records &ldquo;Don&rsquo;t Explain&rdquo; at Marigny Studios for Voice of Tomorrow — In Session</span>
+        <span class="p-meta"><span>October 21, 2026</span><span>Repeatable Press</span></span>
+      </a>
+      <a class="press-item" href="https://repeatable.press/2026/10/15/the-atlanta-film-festival-2027-and-a-new-orleans-film-prepared-for-it/" target="_blank" rel="noopener">
+        <span class="p-title" style="display:block">The Atlanta Film Festival — and a New Orleans Film Prepared for Its 2028 Edition</span>
+        <span class="p-meta"><span>October 15, 2026</span><span>Repeatable Press</span></span>
+      </a>
+      <a class="press-item" href="https://repeatable.press/2026/10/07/aaniyah-dew-drop-legends-continue/" target="_blank" rel="noopener">
+        <span class="p-title" style="display:block">Tonight at the Dew Drop Inn: Aaniyah. Carries the Torch the Legends Lit</span>
+        <span class="p-meta"><span>October 7, 2026</span><span>Repeatable Press</span></span>
+      </a>
+      <a class="press-item" href="https://repeatable.press/2026/10/07/aaniyah-anderson-featured-at-dew-drop-inn-jam-session-wednesday-october-7/" target="_blank" rel="noopener">
+        <span class="p-title" style="display:block">Aaniyah Anderson Featured at Dew Drop Inn Jam Session — Wednesday, October 7</span>
+        <span class="p-meta"><span>October 7, 2026</span><span>Repeatable Press</span></span>
+      </a>
+      <a class="press-item" href="https://repeatable.press/2026/10/02/aaniyah-have-it-your-way-vevo-premiere/" target="_blank" rel="noopener">
+        <span class="p-title" style="display:block">Aaniyah — &ldquo;Have It Your Way&rdquo; (Official Video) Premieres on Vevo October 23</span>
+        <span class="p-meta"><span>October 2, 2026</span><span>Repeatable Press</span></span>
+      </a>
+      <a class="press-item" href="https://repeatable.press/2026/09/25/aaniyah-kennedy-center/" target="_blank" rel="noopener">
+        <span class="p-title" style="display:block">Aaniyah with Water Seed at the Kennedy Center</span>
+        <span class="p-meta"><span>September 25, 2026</span><span>Repeatable Press</span></span>
+      </a>
+      <p class="fineprint">Each piece opens on repeatable.press.</p>
     </div>
   </section>
 
